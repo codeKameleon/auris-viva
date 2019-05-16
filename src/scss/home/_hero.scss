@@ -1,0 +1,36 @@
+.hero {
+  height: calc(100vh - #{$headerHeight});
+  background: url('../../assets/img/hero.png') center center / contain no-repeat;
+
+  & > * {
+    height: 100%;
+  }
+
+  .content {
+    height: 100%;
+    text-align: center;
+  }
+
+  .title {
+    max-width: 650px;
+    margin: 30px auto;
+    font-family: $Leitura;
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    position: relative;
+    font-family: $Lato;
+    font-size: 0.85rem;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: -50px;
+      width: 76px;
+      height: 73px;
+      background: url('../../assets/img/circle.png') center center / contain
+        no-repeat;
+    }
+  }
+}

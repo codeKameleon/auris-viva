@@ -17,8 +17,9 @@
   font-family: 'Leitura Display Italic';
   src: url("../assets/fonts/LeituraDisplay/LeituraDisplay-Italic.woff") format("woff"); }
 
-/* Colors */
 /* Fonts */
+/* Colors */
+/* Layout */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -331,7 +332,7 @@ body {
   font-size: 16px; }
 
 .header {
-  padding: 30px;
+  height: 80px;
   background-color: #fff; }
   .header .logo {
     color: #000;
@@ -356,3 +357,29 @@ body {
         height: 60px;
         border-radius: 50%;
         background-color: rgba(207, 207, 207, 0.26); }
+
+.hero {
+  height: calc(100vh - 80px);
+  background: url("../../assets/img/hero.png") center center/contain no-repeat; }
+  .hero > * {
+    height: 100%; }
+  .hero .content {
+    height: 100%;
+    text-align: center; }
+  .hero .title {
+    max-width: 650px;
+    margin: 30px auto;
+    font-family: "Leitura Display Italic";
+    font-size: 3rem; }
+  .hero .subtitle {
+    position: relative;
+    font-family: "Lato";
+    font-size: 0.85rem; }
+    .hero .subtitle::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: -50px;
+      width: 76px;
+      height: 73px;
+      background: url("../../assets/img/circle.png") center center/contain no-repeat; }
