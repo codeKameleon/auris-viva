@@ -1,0 +1,27 @@
+.team {
+  padding: 200px 0 300px;
+  background-color: $greyMedium;
+
+  .title {
+    font-family: $Leitura;
+  }
+
+  .presentation {
+    font-family: $Lato;
+    line-height: 1.8;
+  }
+
+  .member {
+    text-align: center;
+  }
+
+  .name {
+    font-family: $LatoBlack;
+    font-size: 1.25rem;
+  }
+
+  .function {
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+}
