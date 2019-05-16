@@ -1,0 +1,84 @@
+.about {
+  position: relative;
+  padding: 100px 0 0;
+  background-color: $greyMedium;
+
+  .why-us {
+    color: $greyDark;
+    font-family: $HKGrotesk;
+    font-size: 1.4rem;
+
+    .title {
+      margin-bottom: 30px;
+      color: $black;
+      font-family: $Leitura;
+      font-size: 1.25rem;
+    }
+
+    .subtitle {
+      color: $greyDark;
+      margin-bottom: 0;
+      padding-left: 32px;
+      font-size: 1.4rem;
+    }
+
+    .selected {
+      & > * {
+        font-weight: 700;
+      }
+
+      span {
+        color: $blue;
+      }
+
+      .subtitle {
+        color: $black;
+      }
+    }
+  }
+
+  .illustration {
+    margin-top: 60px;
+  }
+
+  .description {
+    font-family: $Lato;
+    font-size: 1rem;
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .intro {
+      font-weight: 700;
+    }
+  }
+
+  .links {
+    margin-top: 60px;
+  }
+
+  .link {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: $white;
+
+    .text {
+      padding-left: 16px;
+    }
+
+    &::before {
+      content: '';
+      position: relative;
+      z-index: 2;
+      display: flex;
+      width: 50px;
+      height: 2px;
+      margin-left: -20px;
+      background-color: $orange;
+    }
+  }
+}

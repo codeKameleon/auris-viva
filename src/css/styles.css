@@ -149,6 +149,29 @@ sup {
 img {
   border-style: none; }
 
+/* Lists
+   ========================================================================== */
+/**
+ * 1. Remove default spaces 
+   2. Remove default bullets of list items.
+ */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the default styling of links.
+ */
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+
 /* Forms
    ========================================================================== */
 /**
@@ -340,23 +363,26 @@ body {
     font-size: 1.125rem;
     text-transform: uppercase; }
   .header .btn-menu {
+    position: relative;
     border: none;
     background-color: transparent; }
     .header .btn-menu .text {
       position: relative;
+      z-index: 2;
       margin-right: 10px;
       font-family: "Lato Black";
       font-size: 0.8rem;
       text-transform: uppercase; }
-      .header .btn-menu .text::before {
-        content: '';
-        position: absolute;
-        top: -20px;
-        left: -25px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: rgba(207, 207, 207, 0.26); }
+    .header .btn-menu::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      left: -25px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #f3f3f3; }
 
 .hero {
   height: calc(100vh - 80px);
@@ -383,3 +409,57 @@ body {
       width: 76px;
       height: 73px;
       background: url("../../assets/img/circle.png") center center/contain no-repeat; }
+
+.about {
+  position: relative;
+  padding: 100px 0 0;
+  background-color: #f1f1f1; }
+  .about .why-us {
+    color: #9b9b9b;
+    font-family: "HK Grotesk";
+    font-size: 1.4rem; }
+    .about .why-us .title {
+      margin-bottom: 30px;
+      color: #000;
+      font-family: "Leitura Display Italic";
+      font-size: 1.25rem; }
+    .about .why-us .subtitle {
+      color: #9b9b9b;
+      margin-bottom: 0;
+      padding-left: 32px;
+      font-size: 1.4rem; }
+    .about .why-us .selected > * {
+      font-weight: 700; }
+    .about .why-us .selected span {
+      color: #2a66ee; }
+    .about .why-us .selected .subtitle {
+      color: #000; }
+  .about .illustration {
+    margin-top: 60px; }
+  .about .description {
+    font-family: "Lato";
+    font-size: 1rem; }
+    .about .description .title {
+      font-size: 2.5rem; }
+    .about .description .intro {
+      font-weight: 700; }
+  .about .links {
+    margin-top: 60px; }
+  .about .link {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #fff; }
+    .about .link .text {
+      padding-left: 16px; }
+    .about .link::before {
+      content: '';
+      position: relative;
+      z-index: 2;
+      display: flex;
+      width: 50px;
+      height: 2px;
+      margin-left: -20px;
+      background-color: #ff6e28; }

@@ -149,6 +149,35 @@ img {
   border-style: none;
 }
 
+/* Lists
+   ========================================================================== */
+
+/**
+ * 1. Remove default spaces 
+   2. Remove default bullets of list items.
+ */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the default styling of links.
+ */
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 /* Forms
    ========================================================================== */
 
