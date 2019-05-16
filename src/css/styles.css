@@ -419,7 +419,7 @@ body {
     font-family: "HK Grotesk";
     font-size: 1.4rem; }
     .about .why-us .title {
-      margin-bottom: 30px;
+      margin-bottom: 45px;
       color: #000;
       font-family: "Leitura Display Italic";
       font-size: 1.25rem; }
@@ -435,11 +435,14 @@ body {
     .about .why-us .selected .subtitle {
       color: #000; }
   .about .illustration {
-    margin-top: 60px; }
+    margin-top: 60px;
+    margin-bottom: -30px; }
   .about .description {
     font-family: "Lato";
     font-size: 1rem; }
     .about .description .title {
+      margin-bottom: 40px;
+      font-family: "Leitura Display Italic";
       font-size: 2.5rem; }
     .about .description .intro {
       font-weight: 700; }
@@ -463,3 +466,60 @@ body {
       height: 2px;
       margin-left: -20px;
       background-color: #ff6e28; }
+
+.campaigns {
+  padding: 100px 0 0;
+  background-color: #fff; }
+  .campaigns .title {
+    margin-bottom: 60px;
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  .campaigns .subtitle {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1.25rem; }
+  .campaigns .article {
+    height: 60vh;
+    margin-bottom: 40px;
+    padding: 40px 60px;
+    background-color: #2a66ee;
+    color: #fff; }
+  .campaigns .projects-col-1 .article:nth-child(2) {
+    background-color: #ff6e28; }
+  .campaigns .projects-col-1 .article:last-child {
+    margin-bottom: -30px; }
+  .campaigns .projects-col-2 .article:first-child {
+    background-color: #ff6e28;
+    text-align: center; }
+  .campaigns .project-type {
+    font-family: "Lato";
+    font-size: 0.875rem; }
+  .campaigns .project-name {
+    font-family: "Leitura Display Italic";
+    font-size: 2rem; }
+  .campaigns .link {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    font-family: "Lato"; }
+  .campaigns .figures {
+    margin-bottom: 30px; }
+  .campaigns .figure span:first-child {
+    font-size: 1.5rem; }
+  .campaigns .figure span:last-child {
+    font-size: 0.875rem;
+    font-family: "Lato Black"; }
+  .campaigns .progress,
+  .campaigns .progress-bar {
+    border-radius: 8px; }
+  .campaigns .progress {
+    background-color: #ffffff26; }
+  .campaigns .progress-bar {
+    background-color: #fff; }
+  .campaigns .progress-percentage {
+    font-family: "Leitura Display Italic";
+    font-size: 3rem;
+    line-height: 1; }

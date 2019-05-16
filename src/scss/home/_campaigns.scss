@@ -1,0 +1,96 @@
+.campaigns {
+  padding: 100px 0 0;
+  background-color: $white;
+
+  .title {
+    margin-bottom: 60px;
+    font-family: $Leitura;
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1.25rem;
+  }
+
+  .article {
+    height: 60vh;
+    margin-bottom: 40px;
+    padding: 40px 60px;
+    background-color: $blue;
+    color: $white;
+  }
+
+  .projects-col-1 {
+    .article {
+      &:nth-child(2) {
+        background-color: $orange;
+      }
+
+      &:last-child {
+        margin-bottom: -30px;
+      }
+    }
+  }
+
+  .projects-col-2 {
+    .article:first-child {
+      background-color: $orange;
+      text-align: center;
+    }
+  }
+
+  .project-type {
+    font-family: $Lato;
+    font-size: 0.875rem;
+  }
+
+  .project-name {
+    font-family: $Leitura;
+    font-size: 2rem;
+  }
+
+  .link {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: $white;
+    color: $black;
+    font-family: $Lato;
+  }
+
+  .figures {
+    margin-bottom: 30px;
+  }
+
+  .figure {
+    span:first-child {
+      font-size: 1.5rem;
+    }
+    span:last-child {
+      font-size: 0.875rem;
+      font-family: $LatoBlack;
+    }
+  }
+
+  .progress,
+  .progress-bar {
+    border-radius: 8px;
+  }
+
+  .progress {
+    background-color: #ffffff26;
+  }
+
+  .progress-bar {
+    background-color: $white;
+  }
+
+  .progress-percentage {
+    font-family: $Leitura;
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
