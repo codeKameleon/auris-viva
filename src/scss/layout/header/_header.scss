@@ -1,0 +1,35 @@
+.header {
+  padding: 30px;
+  background-color: $white;
+
+  .logo {
+    color: $black;
+    font-family: $LatoBlack;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+
+  .btn-menu {
+    border: none;
+    background-color: transparent;
+
+    .text {
+      position: relative;
+      margin-right: 10px;
+      font-family: $LatoBlack;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: -25px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $greyLight;
+      }
+    }
+  }
+}

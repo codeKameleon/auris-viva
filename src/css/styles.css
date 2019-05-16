@@ -329,3 +329,30 @@ template {
 
 body {
   font-size: 16px; }
+
+.header {
+  padding: 30px;
+  background-color: #fff; }
+  .header .logo {
+    color: #000;
+    font-family: "Lato Black";
+    font-size: 1.125rem;
+    text-transform: uppercase; }
+  .header .btn-menu {
+    border: none;
+    background-color: transparent; }
+    .header .btn-menu .text {
+      position: relative;
+      margin-right: 10px;
+      font-family: "Lato Black";
+      font-size: 0.8rem;
+      text-transform: uppercase; }
+      .header .btn-menu .text::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: -25px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgba(207, 207, 207, 0.26); }
