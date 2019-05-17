@@ -604,3 +604,27 @@ body {
   .foundations .function {
     font-family: "Lato";
     font-size: 1rem; }
+
+.events {
+  padding: 100px 0; }
+  .events .title {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1rem; }
+  .events .subtitle {
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  @media (min-width: 992px) {
+    .events .articles {
+      margin-left: -200px; } }
+  .events .event {
+    margin: 16px; }
+  .events .event-photo {
+    margin-bottom: 16px; }
+  .events .event-date {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1rem; }
+  .events .event-title {
+    font-family: "Lato Black";
+    font-size: 1.25rem; }

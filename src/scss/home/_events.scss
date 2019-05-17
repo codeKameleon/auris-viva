@@ -1,0 +1,39 @@
+.events {
+  padding: 100px 0;
+
+  .title {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-family: $Leitura;
+    font-size: 2.5rem;
+  }
+
+  .articles {
+    @include media-breakpoint-up(lg) {
+      margin-left: -200px;
+    }
+  }
+
+  .event {
+    margin: 16px;
+  }
+
+  .event-photo {
+    margin-bottom: 16px;
+  }
+
+  .event-date {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+
+  .event-title {
+    font-family: $LatoBlack;
+    font-size: 1.25rem;
+  }
+}
