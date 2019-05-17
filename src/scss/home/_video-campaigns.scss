@@ -1,0 +1,73 @@
+.video-campaigns {
+  padding: 300px 0;
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .title {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-family: $Leitura;
+    font-size: 2.5rem;
+  }
+
+  .recent-videos {
+    margin-top: 80px;
+  }
+
+  .video {
+    margin: 0;
+    &:first-child,
+    &:last-child {
+      transform: scale(0.9);
+      .video-cover {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(89, 89, 89, 0.68);
+        }
+      }
+    }
+  }
+
+  .video-cover {
+    margin-bottom: 30px;
+  }
+
+  .video-title {
+    font-family: $LatoBlack;
+    font-size: 1rem;
+  }
+
+  .slogan {
+    margin-bottom: 4px;
+    color: $greyDark;
+    font-family: $Lato;
+  }
+
+  .socials {
+    margin-left: 8px;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: $greyDark;
+    &:nth-child(4) {
+      background-color: $blue;
+    }
+  }
+}

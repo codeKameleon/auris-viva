@@ -673,3 +673,51 @@ body {
     margin-bottom: 40px;
     font-family: "Lato";
     font-size: 1rem; }
+
+.video-campaigns {
+  padding: 300px 0; }
+  .video-campaigns .title,
+  .video-campaigns .subtitle {
+    text-align: center; }
+  .video-campaigns .title {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1rem; }
+  .video-campaigns .subtitle {
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  .video-campaigns .recent-videos {
+    margin-top: 80px; }
+  .video-campaigns .video {
+    margin: 0; }
+    .video-campaigns .video:first-child, .video-campaigns .video:last-child {
+      transform: scale(0.9); }
+      .video-campaigns .video:first-child .video-cover, .video-campaigns .video:last-child .video-cover {
+        position: relative; }
+        .video-campaigns .video:first-child .video-cover::before, .video-campaigns .video:last-child .video-cover::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(89, 89, 89, 0.68); }
+  .video-campaigns .video-cover {
+    margin-bottom: 30px; }
+  .video-campaigns .video-title {
+    font-family: "Lato Black";
+    font-size: 1rem; }
+  .video-campaigns .slogan {
+    margin-bottom: 4px;
+    color: #9b9b9b;
+    font-family: "Lato"; }
+  .video-campaigns .socials {
+    margin-left: 8px; }
+  .video-campaigns .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #9b9b9b; }
+    .video-campaigns .indicator:nth-child(4) {
+      background-color: #2a66ee; }
