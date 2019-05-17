@@ -412,7 +412,7 @@ body {
       left: -50px;
       width: 76px;
       height: 73px;
-      background: url("../../assets/img/circle.png") center center/contain no-repeat; }
+      background: url("../../assets/img/circle-1.png") center center/contain no-repeat; }
 
 .about {
   position: relative;
@@ -628,3 +628,48 @@ body {
   .events .event-title {
     font-family: "Lato Black";
     font-size: 1.25rem; }
+
+.volonteers {
+  position: relative;
+  z-index: 1;
+  padding: 150px 0;
+  background-color: #2a66ee;
+  color: #fff; }
+  .volonteers::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 45%;
+    width: 348px;
+    height: 335px;
+    z-index: 2;
+    background: url("../../assets/img/shape-1.png") no-repeat; }
+  .volonteers::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: 10%;
+    width: 497px;
+    height: 335px;
+    z-index: 2;
+    background: url("../../assets/img/shape-2.png") no-repeat; }
+  .volonteers .title {
+    margin-top: 0;
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  .volonteers .subtitle {
+    position: relative;
+    font-family: "Lato Black";
+    font-size: 0.85rem; }
+    .volonteers .subtitle::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: -50px;
+      width: 76px;
+      height: 73px;
+      background: url("../../assets/img/circle-2.png") center center/contain no-repeat; }
+  .volonteers .text {
+    margin-bottom: 40px;
+    font-family: "Lato";
+    font-size: 1rem; }
