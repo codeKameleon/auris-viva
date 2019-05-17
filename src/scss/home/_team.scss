@@ -12,7 +12,12 @@
   }
 
   .member {
+    margin: 16px auto;
     text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+    }
   }
 
   .name {
