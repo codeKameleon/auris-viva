@@ -1,3 +1,9 @@
+/* Bootstrap*/
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+
+/* App*/
 @import './fonts';
 @import './variables';
 @import './normalize';
@@ -9,3 +15,4 @@
 @import './home/about';
 @import './home/campaigns';
 @import './home/team';
+@import './home/foundations';

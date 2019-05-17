@@ -1,3 +1,5 @@
+/* Bootstrap*/
+/* App*/
 /* HK Grotesk */
 @font-face {
   font-family: 'HK Grotesk';
@@ -155,6 +157,7 @@ img {
  * 1. Remove default spaces 
    2. Remove default bullets of list items.
  */
+ol,
 ul {
   margin: 0;
   padding: 0;
@@ -352,6 +355,7 @@ template {
   box-sizing: border-box; }
 
 body {
+  overflow-x: hidden;
   font-size: 16px; }
 
 .header {
@@ -413,7 +417,8 @@ body {
 .about {
   position: relative;
   padding: 100px 0 0;
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  padding-bottom: 60px; }
   .about .why-us {
     color: #9b9b9b;
     font-family: "HK Grotesk";
@@ -435,8 +440,16 @@ body {
     .about .why-us .selected .subtitle {
       color: #000; }
   .about .illustration {
-    margin-top: 60px;
-    margin-bottom: -30px; }
+    width: 100px;
+    margin: 30px auto; }
+    @media (min-width: 576px) {
+      .about .illustration {
+        width: 200px; } }
+    @media (min-width: 768px) {
+      .about .illustration {
+        width: auto;
+        margin-top: 60px;
+        margin-bottom: -80px; } }
   .about .description {
     font-family: "Lato";
     font-size: 1rem; }
@@ -448,13 +461,18 @@ body {
       font-weight: 700; }
   .about .links {
     margin-top: 60px; }
+    @media (min-width: 576px) {
+      .about .links {
+        padding: 0 24px;
+        margin: 30px auto; } }
   .about .link {
     position: relative;
     z-index: 1;
     width: 200px;
     height: 60px;
     border-radius: 30px;
-    background-color: #fff; }
+    background-color: #fff;
+    margin: 16px auto; }
     .about .link .text {
       padding-left: 16px; }
     .about .link::before {
@@ -480,7 +498,7 @@ body {
     font-size: 1.25rem; }
   .campaigns .article {
     height: 60vh;
-    margin: 40px 0;
+    margin-bottom: 40px;
     padding: 40px 60px;
     background-color: #2a66ee;
     color: #fff; }
@@ -498,7 +516,7 @@ body {
     font-family: "Leitura Display Italic";
     font-size: 2rem; }
   .campaigns .link {
-    width: 300px;
+    width: 80%;
     height: 60px;
     margin: 0 auto;
     border-radius: 30px;
@@ -516,7 +534,7 @@ body {
   .campaigns .progress-bar {
     border-radius: 8px; }
   .campaigns .progress {
-    background-color: #ffffff26; }
+    background-color: rgba(255, 255, 255, 0.15); }
   .campaigns .progress-bar {
     background-color: #fff; }
   .campaigns .progress-percentage {
@@ -538,5 +556,37 @@ body {
     font-family: "Lato Black";
     font-size: 1.25rem; }
   .team .function {
+    font-family: "Lato";
+    font-size: 1rem; }
+
+.foundations {
+  position: relative;
+  padding: 100x 0;
+  color: #fff; }
+  .foundations .carousel {
+    padding: 100px 60px;
+    background-color: #2a66ee; }
+    @media (min-width: 1200px) {
+      .foundations .carousel {
+        margin-top: -100px;
+        margin-right: -20%; } }
+  .foundations .title {
+    font-family: "Lato";
+    font-size: 1rem; }
+  .foundations .quote {
+    max-width: 800px;
+    font-family: "Leitura Display Italic";
+    font-size: 2rem; }
+  .foundations .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-indent: -9999px; }
+  .foundations .name {
+    font-family: "Lato Black";
+    font-size: 1rem; }
+  .foundations .function {
     font-family: "Lato";
     font-size: 1rem; }

@@ -1,0 +1,44 @@
+.foundations {
+  position: relative;
+  padding: 100x 0;
+  color: $white;
+
+  .carousel {
+    padding: 100px 60px;
+    background-color: $blue;
+    @include media-breakpoint-up(xl) {
+      margin-top: -100px;
+      margin-right: -20%;
+    }
+  }
+
+  .title {
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+
+  .quote {
+    max-width: 800px;
+    font-family: $Leitura;
+    font-size: 2rem;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-indent: -9999px;
+  }
+
+  .name {
+    font-family: $LatoBlack;
+    font-size: 1rem;
+  }
+
+  .function {
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+}
