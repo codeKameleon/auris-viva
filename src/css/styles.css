@@ -721,3 +721,52 @@ body {
     background-color: #9b9b9b; }
     .video-campaigns .indicator:nth-child(4) {
       background-color: #2a66ee; }
+
+.partners {
+  padding: 150px 0; }
+  .partners .title {
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  .partners .thanks {
+    width: 100%;
+    margin-bottom: 70px;
+    font-family: "Lato";
+    font-size: 1rem;
+    line-height: 2; }
+    @media (min-width: 768px) {
+      .partners .thanks {
+        max-width: 390px; } }
+  .partners .section-link {
+    position: relative;
+    display: block;
+    width: 30%;
+    margin: 0 auto 60px;
+    font-family: "Lato";
+    font-size: 1rem; }
+    .partners .section-link::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: -65px;
+      transform: translateY(-50%);
+      width: 76px;
+      height: 73px;
+      background: url("../../assets/img/circle-3.png") center center/contain no-repeat; }
+    @media (min-width: 768px) {
+      .partners .section-link {
+        width: auto;
+        margin: 0 0 0 76px; } }
+  .partners .figures {
+    margin-bottom: 30px;
+    padding: 60px;
+    background-color: #2a66ee;
+    color: #fff; }
+  .partners .figure {
+    padding: 20px; }
+    .partners .figure span:first-child {
+      font-family: "Leitura Display Italic";
+      font-size: 3.125rem; }
+    .partners .figure span:last-child {
+      font-family: "Lato";
+      font-size: 1.125rem; }
