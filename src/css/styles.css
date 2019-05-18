@@ -770,3 +770,30 @@ body {
     .partners .figure span:last-child {
       font-family: "Lato";
       font-size: 1.125rem; }
+
+.donations {
+  height: 50vh;
+  background: url("../../assets/img/donations.png") center center/cover repeat-x; }
+  @media (min-width: 1200px) {
+    .donations {
+      background-size: contain; } }
+  .donations .donation {
+    position: relative;
+    top: -60px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-family: "Lato";
+    text-align: center; }
+    .donations .donation::after {
+      content: '';
+      position: absolute;
+      z-index: 8;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #f1f1f1; }
