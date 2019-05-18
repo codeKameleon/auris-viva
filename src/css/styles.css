@@ -388,6 +388,23 @@ body {
       border-radius: 50%;
       background-color: #f3f3f3; }
 
+.footer {
+  padding: 30px;
+  background-color: #123481;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 0.85rem; }
+  .footer .contact {
+    margin-left: 20px;
+    padding: 16px 0; }
+    .footer .contact > * {
+      padding: 0 4px;
+      border-left: 2px solid #fff; }
+  @media (min-width: 768px) {
+    .footer {
+      padding: 60px; } }
+
 .hero {
   height: calc(100vh - 80px);
   background: url("../../assets/img/hero.png") center center/contain no-repeat; }

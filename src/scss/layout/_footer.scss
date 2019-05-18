@@ -1,0 +1,21 @@
+.footer {
+  padding: 30px;
+  background-color: #123481;
+  text-transform: uppercase;
+  color: $white;
+  font-family: $Lato;
+  font-size: 0.85rem;
+
+  .contact {
+    margin-left: 20px;
+    padding: 16px 0;
+
+    & > * {
+      padding: 0 4px;
+      border-left: 2px solid $white;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    padding: 60px;
+  }
+}
