@@ -1,5 +1,9 @@
 .partners {
-  padding: 150px 0;
+  padding: 0 0 120px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 80px 0 200px;
+  }
 
   .title {
     font-family: $Leitura;
@@ -47,8 +51,7 @@
   }
 
   .figures {
-    margin-bottom: 30px;
-    padding: 60px;
+    padding: 20px;
     background-color: $blue;
     color: $white;
   }

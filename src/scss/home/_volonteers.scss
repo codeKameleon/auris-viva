@@ -8,35 +8,73 @@
   &::before {
     content: '';
     position: absolute;
-    top: -200px;
-    left: 45%;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 348px;
     height: 335px;
     z-index: 2;
-    background: url('../../assets/img/shape-1.png') no-repeat;
+    background: url('../../assets/img/shape-1.svg') center center / 50% 50%
+      no-repeat;
+
+    @include media-breakpoint-up(lg) {
+      top: -200px;
+      left: 40%;
+      transform: translateX(0);
+      background-size: 80% 80%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: 45%;
+      background-size: 100% 100%;
+    }
   }
 
   &::after {
     content: '';
     position: absolute;
-    bottom: -200px;
-    left: 10%;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 497px;
     height: 335px;
     z-index: 2;
-    background: url('../../assets/img/shape-2.png') no-repeat;
+    background: url('../../assets/img/shape-2.svg') center center / 50% 50%
+      no-repeat;
+
+    @include media-breakpoint-up(lg) {
+      bottom: -160px;
+      left: 10%;
+      transform: translateX(0);
+      background-size: 80% 80%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: 15%;
+      background-size: 100% 100%;
+    }
   }
 
   .title {
     margin-top: 0;
     font-family: $Leitura;
     font-size: 2.5rem;
+
+    @include media-breakpoint-up(xl) {
+      padding: 0 25px;
+    }
   }
 
-  .subtitle {
+  .section-link {
     position: relative;
+    transform: translateX(50px);
     font-family: $LatoBlack;
     font-size: 0.85rem;
+
+    @include media-breakpoint-up(lg) {
+      transform: translateX(0);
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -53,5 +91,6 @@
     margin-bottom: 40px;
     font-family: $Lato;
     font-size: 1rem;
+    line-height: 2;
   }
 }

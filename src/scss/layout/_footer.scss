@@ -1,10 +1,15 @@
 .footer {
+  margin-top: 80px;
   padding: 30px;
   background-color: #123481;
   text-transform: uppercase;
   color: $white;
   font-family: $Lato;
   font-size: 0.85rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 160px;
+  }
 
   .contact {
     margin-left: 20px;

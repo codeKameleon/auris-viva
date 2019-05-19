@@ -1,11 +1,19 @@
 .campaigns {
-  padding: 100px 0 0;
+  padding: 60px 0;
   background-color: $white;
 
+  @include media-breakpoint-up(md) {
+    padding: 100px 0;
+  }
+
   .title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-family: $Leitura;
     font-size: 2.5rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 60px;
+    }
   }
 
   .subtitle {
@@ -15,11 +23,15 @@
   }
 
   .article {
-    height: 60vh;
+    height: auto;
     margin: 40px 0;
     padding: 40px 60px;
     background-color: $blue;
     color: $white;
+
+    @include media-breakpoint-up(md) {
+      height: 60vh;
+    }
   }
 
   .projects-col-1 {
@@ -30,7 +42,7 @@
 
       @include media-breakpoint-up(md) {
         &:last-child {
-          margin-bottom: -30px;
+          margin-bottom: -150px;
         }
       }
     }
@@ -58,6 +70,7 @@
     width: 80%;
     height: 60px;
     margin: 0 auto;
+    padding: 0 8px;
     border-radius: 30px;
     background-color: $white;
     color: $black;

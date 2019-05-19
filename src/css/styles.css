@@ -361,6 +361,13 @@ body {
 .header {
   height: 80px;
   background-color: #fff; }
+  @media (min-width: 768px) {
+    .header {
+      height: calc(80px * 2); } }
+  .header .wrapper {
+    height: 100%; }
+    .header .wrapper > * {
+      height: 100%; }
   .header .logo {
     color: #000;
     font-family: "Lato Black";
@@ -389,12 +396,16 @@ body {
       background-color: #f3f3f3; }
 
 .footer {
+  margin-top: 80px;
   padding: 30px;
   background-color: #123481;
   text-transform: uppercase;
   color: #fff;
   font-family: "Lato";
   font-size: 0.85rem; }
+  @media (min-width: 992px) {
+    .footer {
+      margin-top: 160px; } }
   .footer .contact {
     margin-left: 20px;
     padding: 16px 0; }
@@ -417,12 +428,15 @@ body {
     max-width: 650px;
     margin: 30px auto;
     font-family: "Leitura Display Italic";
-    font-size: 3rem; }
-  .hero .subtitle {
+    font-size: 2rem; }
+    @media (min-width: 768px) {
+      .hero .title {
+        font-size: 3rem; } }
+  .hero .section-link {
     position: relative;
     font-family: "Lato";
     font-size: 0.85rem; }
-    .hero .subtitle::before {
+    .hero .section-link::before {
       content: '';
       position: absolute;
       top: -30px;
@@ -433,13 +447,17 @@ body {
 
 .about {
   position: relative;
-  padding: 100px 0 0;
-  background-color: #f1f1f1;
-  padding-bottom: 60px; }
+  padding: 60px 0;
+  background-color: #f1f1f1; }
+  @media (min-width: 768px) {
+    .about {
+      padding: 100px 0; } }
   .about .why-us {
     color: #9b9b9b;
     font-family: "HK Grotesk";
     font-size: 1.4rem; }
+    .about .why-us .presentation {
+      width: 100%; }
     .about .why-us .title {
       margin-bottom: 45px;
       color: #000;
@@ -448,8 +466,11 @@ body {
     .about .why-us .subtitle {
       color: #9b9b9b;
       margin-bottom: 0;
-      padding-left: 32px;
-      font-size: 1.4rem; }
+      font-size: 0.85rem; }
+      @media (min-width: 576px) {
+        .about .why-us .subtitle {
+          font-size: 1.25rem;
+          padding-left: 32px; } }
     .about .why-us .selected > * {
       font-weight: 700; }
     .about .why-us .selected span {
@@ -457,8 +478,8 @@ body {
     .about .why-us .selected .subtitle {
       color: #000; }
   .about .illustration {
-    width: 100px;
-    margin: 30px auto; }
+    width: 120px;
+    margin: 40px auto; }
     @media (min-width: 576px) {
       .about .illustration {
         width: 200px; } }
@@ -466,14 +487,17 @@ body {
       .about .illustration {
         width: auto;
         margin-top: 60px;
-        margin-bottom: -80px; } }
+        margin-bottom: -120px; } }
   .about .description {
     font-family: "Lato";
     font-size: 1rem; }
     .about .description .title {
       margin-bottom: 40px;
       font-family: "Leitura Display Italic";
-      font-size: 2.5rem; }
+      font-size: 2rem; }
+      @media (min-width: 768px) {
+        .about .description .title {
+          font-size: 2.5rem; } }
     .about .description .intro {
       font-weight: 700; }
   .about .links {
@@ -507,27 +531,36 @@ body {
       background-color: #ff6e28; }
 
 .campaigns {
-  padding: 100px 0 0;
+  padding: 60px 0;
   background-color: #fff; }
+  @media (min-width: 768px) {
+    .campaigns {
+      padding: 100px 0; } }
   .campaigns .title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-family: "Leitura Display Italic";
     font-size: 2.5rem; }
+    @media (min-width: 768px) {
+      .campaigns .title {
+        margin-bottom: 60px; } }
   .campaigns .subtitle {
     color: #9b9b9b;
     font-family: "Lato";
     font-size: 1.25rem; }
   .campaigns .article {
-    height: 60vh;
+    height: auto;
     margin: 40px 0;
     padding: 40px 60px;
     background-color: #2a66ee;
     color: #fff; }
+    @media (min-width: 768px) {
+      .campaigns .article {
+        height: 60vh; } }
   .campaigns .projects-col-1 .article:nth-child(2) {
     background-color: #ff6e28; }
   @media (min-width: 768px) {
     .campaigns .projects-col-1 .article:last-child {
-      margin-bottom: -30px; } }
+      margin-bottom: -150px; } }
   .campaigns .projects-col-2 .article:first-child {
     margin-top: 0;
     background-color: #ff6e28;
@@ -542,6 +575,7 @@ body {
     width: 80%;
     height: 60px;
     margin: 0 auto;
+    padding: 0 8px;
     border-radius: 30px;
     background-color: #fff;
     color: #000;
@@ -570,19 +604,23 @@ body {
         margin: 0; } }
 
 .team {
-  padding: 200px 0 300px;
+  padding: 60px 0;
   background-color: #f1f1f1; }
+  @media (min-width: 768px) {
+    .team {
+      padding: 150px 0; } }
+  @media (min-width: 992px) {
+    .team {
+      padding: 200px 0; } }
   .team .title {
     font-family: "Leitura Display Italic"; }
   .team .presentation {
+    margin-bottom: 60px;
     font-family: "Lato";
-    line-height: 1.8; }
+    line-height: 2; }
   .team .member {
     margin: 16px auto;
     text-align: center; }
-    @media (min-width: 576px) {
-      .team .member {
-        margin: 0; } }
   .team .name {
     font-family: "Lato Black";
     font-size: 1.25rem; }
@@ -592,26 +630,41 @@ body {
 
 .foundations {
   position: relative;
-  padding: 100x 0;
-  color: #fff; }
-  .foundations .carousel {
-    padding: 100px 60px;
-    background-color: #2a66ee; }
-    @media (min-width: 1200px) {
-      .foundations .carousel {
-        margin-top: -100px;
-        margin-right: -20%; } }
+  padding: 60px 0; }
+  @media (min-width: 992px) {
+    .foundations {
+      padding: 120px 0; } }
+  .foundations .wrapper {
+    padding: 30px 60px;
+    background-color: #2a66ee;
+    color: #fff; }
+    @media (min-width: 992px) {
+      .foundations .wrapper {
+        margin-top: -200px;
+        margin-right: 0;
+        padding: 60px; } }
   .foundations .title {
     font-family: "Lato";
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin-bottom: 30px; }
+  @media (min-width: 992px) {
+    .foundations .previous-icon path {
+      stroke: #2a66ee; } }
   .foundations .quote {
     max-width: 800px;
+    padding: 0 10px;
     font-family: "Leitura Display Italic";
-    font-size: 2rem; }
+    font-size: 1.2rem; }
+    @media (min-width: 768px) {
+      .foundations .quote {
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      .foundations .quote {
+        font-size: 2.5rem; } }
   .foundations .indicator {
     width: 10px;
     height: 10px;
-    margin: 0 2px;
+    margin: 0 8px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.15);
     text-indent: -9999px; }
@@ -623,21 +676,37 @@ body {
     font-size: 1rem; }
 
 .events {
-  padding: 100px 0; }
+  padding: 0 0 60px; }
+  @media (min-width: 992px) {
+    .events {
+      padding: 0 0 200px; } }
+  @media (min-width: 1200px) {
+    .events {
+      padding: 0 0 250px; } }
   .events .title {
     color: #9b9b9b;
     font-family: "Lato";
     font-size: 1rem; }
   .events .subtitle {
+    margin-bottom: 60px;
     font-family: "Leitura Display Italic";
     font-size: 2.5rem; }
   @media (min-width: 992px) {
     .events .articles {
       margin-left: -200px; } }
   .events .event {
-    margin: 16px; }
+    max-width: 280px;
+    margin: 0 auto 16px; }
+    @media (min-width: 992px) {
+      .events .event {
+        margin: 16px;
+        max-width: none; } }
   .events .event-photo {
-    margin-bottom: 16px; }
+    max-width: 100%;
+    margin-bottom: 15px; }
+    @media (min-width: 992px) {
+      .events .event-photo {
+        max-width: none; } }
   .events .event-date {
     color: #9b9b9b;
     font-family: "Lato";
@@ -655,30 +724,59 @@ body {
   .volonteers::before {
     content: '';
     position: absolute;
-    top: -200px;
-    left: 45%;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 348px;
     height: 335px;
     z-index: 2;
-    background: url("../../assets/img/shape-1.png") no-repeat; }
+    background: url("../../assets/img/shape-1.svg") center center/50% 50% no-repeat; }
+    @media (min-width: 992px) {
+      .volonteers::before {
+        top: -200px;
+        left: 40%;
+        transform: translateX(0);
+        background-size: 80% 80%; } }
+    @media (min-width: 1200px) {
+      .volonteers::before {
+        left: 45%;
+        background-size: 100% 100%; } }
   .volonteers::after {
     content: '';
     position: absolute;
-    bottom: -200px;
-    left: 10%;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 497px;
     height: 335px;
     z-index: 2;
-    background: url("../../assets/img/shape-2.png") no-repeat; }
+    background: url("../../assets/img/shape-2.svg") center center/50% 50% no-repeat; }
+    @media (min-width: 992px) {
+      .volonteers::after {
+        bottom: -160px;
+        left: 10%;
+        transform: translateX(0);
+        background-size: 80% 80%; } }
+    @media (min-width: 1200px) {
+      .volonteers::after {
+        left: 15%;
+        background-size: 100% 100%; } }
   .volonteers .title {
     margin-top: 0;
     font-family: "Leitura Display Italic";
     font-size: 2.5rem; }
-  .volonteers .subtitle {
+    @media (min-width: 1200px) {
+      .volonteers .title {
+        padding: 0 25px; } }
+  .volonteers .section-link {
     position: relative;
+    transform: translateX(50px);
     font-family: "Lato Black";
     font-size: 0.85rem; }
-    .volonteers .subtitle::before {
+    @media (min-width: 992px) {
+      .volonteers .section-link {
+        transform: translateX(0); } }
+    .volonteers .section-link::before {
       content: '';
       position: absolute;
       top: -30px;
@@ -689,10 +787,14 @@ body {
   .volonteers .text {
     margin-bottom: 40px;
     font-family: "Lato";
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 2; }
 
 .video-campaigns {
-  padding: 300px 0; }
+  padding: 100px 0 60px; }
+  @media (min-width: 992px) {
+    .video-campaigns {
+      padding-top: 200px; } }
   .video-campaigns .title,
   .video-campaigns .subtitle {
     text-align: center; }
@@ -704,21 +806,42 @@ body {
     font-family: "Leitura Display Italic";
     font-size: 2.5rem; }
   .video-campaigns .recent-videos {
-    margin-top: 80px; }
+    margin-top: 30px; }
   .video-campaigns .video {
     margin: 0; }
+    .video-campaigns .video .thumb {
+      max-width: 100%; }
+      @media (min-width: 992px) {
+        .video-campaigns .video .thumb {
+          max-width: none; } }
     .video-campaigns .video:first-child, .video-campaigns .video:last-child {
-      transform: scale(0.9); }
-      .video-campaigns .video:first-child .video-cover, .video-campaigns .video:last-child .video-cover {
-        position: relative; }
-        .video-campaigns .video:first-child .video-cover::before, .video-campaigns .video:last-child .video-cover::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: rgba(89, 89, 89, 0.68); }
+      /*
+        Design purpose only to show that on smaller screen we only see 
+        the current video and not the previous and next video as there is
+        not enough space for it.
+      */
+      display: none; }
+      @media (min-width: 992px) {
+        .video-campaigns .video:first-child, .video-campaigns .video:last-child {
+          display: block;
+          transform: scale(0.9); }
+          .video-campaigns .video:first-child .video-cover, .video-campaigns .video:last-child .video-cover {
+            position: relative; }
+            .video-campaigns .video:first-child .video-cover::before, .video-campaigns .video:last-child .video-cover::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: rgba(89, 89, 89, 0.68); }
+          .video-campaigns .video:first-child .thumb, .video-campaigns .video:last-child .thumb {
+            max-width: none; } }
+  .video-campaigns .video-details {
+    padding: 0 15px; }
+    @media (min-width: 992px) {
+      .video-campaigns .video-details {
+        padding: 0; } }
   .video-campaigns .video-cover {
     margin-bottom: 30px; }
   .video-campaigns .video-title {
@@ -733,14 +856,17 @@ body {
   .video-campaigns .indicator {
     width: 10px;
     height: 10px;
-    margin: 0 2px;
+    margin: 0 8px;
     border-radius: 50%;
     background-color: #9b9b9b; }
     .video-campaigns .indicator:nth-child(4) {
       background-color: #2a66ee; }
 
 .partners {
-  padding: 150px 0; }
+  padding: 0 0 120px; }
+  @media (min-width: 992px) {
+    .partners {
+      padding: 80px 0 200px; } }
   .partners .title {
     font-family: "Leitura Display Italic";
     font-size: 2.5rem; }
@@ -775,8 +901,7 @@ body {
         width: auto;
         margin: 0 0 0 76px; } }
   .partners .figures {
-    margin-bottom: 30px;
-    padding: 60px;
+    padding: 20px;
     background-color: #2a66ee;
     color: #fff; }
   .partners .figure {

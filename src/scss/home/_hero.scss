@@ -15,10 +15,14 @@
     max-width: 650px;
     margin: 30px auto;
     font-family: $Leitura;
-    font-size: 3rem;
+    font-size: 2rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
   }
 
-  .subtitle {
+  .section-link {
     position: relative;
     font-family: $Lato;
     font-size: 0.85rem;
