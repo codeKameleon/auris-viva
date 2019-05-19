@@ -1,0 +1,104 @@
+.video-campaigns {
+  padding: 100px 0 60px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 200px;
+  }
+
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .title {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-family: $Leitura;
+    font-size: 2.5rem;
+  }
+
+  .recent-videos {
+    margin-top: 30px;
+  }
+
+  .video {
+    margin: 0;
+    .thumb {
+      max-width: 100%;
+      @include media-breakpoint-up(lg) {
+        max-width: none;
+      }
+    }
+    &:first-child,
+    &:last-child {
+      /*
+        Design purpose only to show that on smaller screen we only see 
+        the current video and not the previous and next video as there is
+        not enough space for it.
+      */
+      display: none;
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+        transform: scale(0.9);
+        .video-cover {
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(89, 89, 89, 0.68);
+          }
+        }
+        .thumb {
+          max-width: none;
+        }
+      }
+    }
+  }
+
+  .video-details {
+    padding: 0 15px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+  }
+
+  .video-cover {
+    margin-bottom: 30px;
+  }
+
+  .video-title {
+    font-family: $LatoBlack;
+    font-size: 1rem;
+  }
+
+  .slogan {
+    margin-bottom: 4px;
+    color: $greyDark;
+    font-family: $Lato;
+  }
+
+  .socials {
+    margin-left: 8px;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: $greyDark;
+    &:nth-child(4) {
+      background-color: $blue;
+    }
+  }
+}

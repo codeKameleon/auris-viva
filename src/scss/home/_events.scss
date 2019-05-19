@@ -1,0 +1,59 @@
+.events {
+  padding: 0 0 60px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 0 200px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 0 0 250px;
+  }
+
+  .title {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    margin-bottom: 60px;
+    font-family: $Leitura;
+    font-size: 2.5rem;
+  }
+
+  .articles {
+    @include media-breakpoint-up(lg) {
+      margin-left: -200px;
+    }
+  }
+
+  .event {
+    max-width: 280px;
+    margin: 0 auto 16px;
+
+    @include media-breakpoint-up(lg) {
+      margin: 16px;
+      max-width: none;
+    }
+  }
+
+  .event-photo {
+    max-width: 100%;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: none;
+    }
+  }
+
+  .event-date {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1rem;
+  }
+
+  .event-title {
+    font-family: $LatoBlack;
+    font-size: 1.25rem;
+  }
+}

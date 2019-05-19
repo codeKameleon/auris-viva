@@ -1,0 +1,70 @@
+.partners {
+  padding: 0 0 120px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 80px 0 200px;
+  }
+
+  .title {
+    font-family: $Leitura;
+    font-size: 2.5rem;
+  }
+
+  .thanks {
+    width: 100%;
+    margin-bottom: 70px;
+    font-family: $Lato;
+    font-size: 1rem;
+    line-height: 2;
+
+    @include media-breakpoint-up(md) {
+      max-width: 390px;
+    }
+  }
+
+  .section-link {
+    position: relative;
+    display: block;
+    width: 30%;
+    margin: 0 auto 60px;
+
+    font-family: $Lato;
+    font-size: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: -65px;
+      transform: translateY(-50%);
+      width: 76px;
+      height: 73px;
+      background: url('../../assets/img/circle-3.png') center center / contain
+        no-repeat;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+      margin: 0 0 0 76px;
+    }
+  }
+
+  .figures {
+    padding: 20px;
+    background-color: $blue;
+    color: $white;
+  }
+
+  .figure {
+    padding: 20px;
+    span:first-child {
+      font-family: $Leitura;
+      font-size: 3.125rem;
+    }
+    span:last-child {
+      font-family: $Lato;
+      font-size: 1.125rem;
+    }
+  }
+}

@@ -8,7 +8,816 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Auris-Viva</title>
   </head>
+
   <body>
+    <!-- start HEADER -->
+    <header class="header container-fluid">
+      <div class="wrapper container">
+        <div class="row d-flex flex-nowrap align-items-center">
+          <div class="col-6 d-flex justify-content-start">
+            <a class="logo" href="#">Auris Viva</a>
+          </div>
+
+          <div class="col-6 d-flex justify-content-end">
+            <button class="btn-menu">
+              <span class="text">Menu</span>
+
+              <img src="./assets/img/menu-icon.svg" alt="menu icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end HEADER -->
+
+    <!-- start HERO SECTION -->
+    <section class="hero container-fluid">
+      <div class="row">
+        <div
+          class="content col d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="title">
+            Auris Viva l’asbl pour l’intégration des sourds et malentendants.
+          </h1>
+
+          <a href="#" class="section-link d-flex">Faites un don</a>
+        </div>
+      </div>
+    </section>
+    <!-- end HERO SECTION -->
+
+    <!-- start ABOUT SECTION -->
+    <section class="about container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 why-us d-flex flex-column justify-content-start">
+            <h1 class="title">Pourquoi nous ?</h1>
+
+            <ul
+              class="presentation d-flex flex-sm-column justify-content-between"
+            >
+              <li class="d-flex flex-column flex-sm-row align-items-center">
+                <span>01</span>
+                <h2 class="subtitle">Histoire</h2>
+              </li>
+
+              <li class="d-flex flex-column flex-sm-row align-items-center">
+                <span>02</span>
+                <h2 class="subtitle">Objectif</h2>
+              </li>
+
+              <li class="d-flex flex-column flex-sm-row align-items-center">
+                <span>03</span>
+                <h2 class="subtitle">Projet</h2>
+              </li>
+
+              <li
+                class="d-flex flex-column flex-sm-row align-items-center selected"
+              >
+                <span>04</span>
+                <h2 class="subtitle">Implant cochléaire</h2>
+              </li>
+            </ul>
+
+            <img
+              class="illustration"
+              src="./assets/img/cochlear-implant.png"
+              alt="illustration cochlear implant"
+            />
+          </div>
+
+          <div class="col-sm-6 description">
+            <h3 class="title">Implant cochléaire</h3>
+
+            <p class="intro">
+              Notre objectif se focalisera sur des personnes appareillées, et/ou
+              implantées et oralistes. Dans tout ce que nous ferons, nous
+              chercherons à remplir cette mission. Et à chaque étape de
+              celle-ci, nous serons guidés par les valeurs qui nous définissent.
+            </p>
+
+            <p>
+              Nous croyons fermement qu’avec la technologie actuelle (et à venir
+              !) des appareils auditifs et des implants cochléaires, les
+              personnes peuvent exploiter leur audition au mieux de leurs
+              possibilités, dans la vie quotidienne, suivre une scolarité quasi
+              normale (voire normale pour beaucoup), dans la vie
+              professionnelle, avec un niveau de langage et de compréhension
+              équivalents (voire parfois supérieurs) aux personnes entendantes.
+            </p>
+
+            <div class="links d-flex flex-wrap justify-content-between">
+              <a class="link d-flex align-items-center" href="#"
+                ><span class="text">Lire plus</span></a
+              >
+              <a class="link d-flex align-items-center" href="#"
+                ><span class="text">Télécharger</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end ABOUT SECTION -->
+
+    <!-- start CAMPAIGNS SECTION -->
+    <section class="campaigns container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="subtitle">Quelques projets</h2>
+            <h1 class="title">Nos Campagnes</h1>
+          </div>
+        </div>
+
+        <div class="row d-flex align-items-center">
+          <!--PROJECTS COL 1-->
+          <div class="projects-col-1 col-sm-12 col-md-6">
+            <article class="article d-flex flex-column justify-content-between">
+              <!--TOP ARTICLE-->
+              <header>
+                <span class="project-type">Financement</span>
+                <h3 class="project-name">Appel de fonds</h3>
+              </header>
+
+              <!--BOTTOM ARTICLE-->
+              <div class="campaign-details">
+                <div
+                  class="figures d-flex flex-wrap justify-content-between align-items-end"
+                >
+                  <div class="figure d-flex flex-column">
+                    <span>2</span>
+                    <span>Contributeurs</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>130 €</span>
+                    <span>Gagné</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>20 000 €</span>
+                    <span>Cible</span>
+                  </div>
+
+                  <span
+                    class="progress-percentage d-flex flex-column justify-content-end"
+                    >0.5%</span
+                  >
+                </div>
+
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.5%"
+                    aria-valuenow="0.5"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="article d-flex flex-column justify-content-between">
+              <!--TOP ARTICLE-->
+              <header>
+                <span class="project-type">Application</span>
+                <h3 class="project-name">I-Help</h3>
+              </header>
+
+              <!--BOTTOM ARTICLE-->
+              <div class="campaign-details">
+                <div
+                  class="figures d-flex flex-wrap justify-content-between align-items-end"
+                >
+                  <div class="figure d-flex flex-column">
+                    <span>56</span>
+                    <span>Contributeurs</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>5071 €</span>
+                    <span>Gagné</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>5000</span>
+                    <span>Cible</span>
+                  </div>
+
+                  <span
+                    class="progress-percentage d-flex flex-column justify-content-end"
+                    >101%</span
+                  >
+                </div>
+
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 101%"
+                    aria-valuenow="101"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="article d-flex flex-column justify-content-between">
+              <!--TOP ARTICLE-->
+              <header>
+                <span class="project-type">Audiovisuelle</span>
+                <h3 class="project-name">Campagne Vidéo</h3>
+              </header>
+
+              <!--BOTTOM ARTICLE-->
+              <div class="campaign-details">
+                <div
+                  class="figures d-flex flex-wrap justify-content-between align-items-end"
+                >
+                  <div class="figure d-flex flex-column">
+                    <span>9</span>
+                    <span>Contributeurs</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>1090 €</span>
+                    <span>Gagné</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>5500 €</span>
+                    <span>Cible</span>
+                  </div>
+
+                  <span
+                    class="progress-percentage d-flex flex-column justify-content-end"
+                    >20%</span
+                  >
+                </div>
+
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!--PROJECTS COL 2-->
+          <div class="projects-col-2 col-sm-12 col-md-6">
+            <article class="article d-flex flex-column justify-content-between">
+              <!--TOP ARTICLE-->
+              <header>
+                <span class="project-type">Objet pins</span>
+                <h3 class="project-name">L'oreille blanche</h3>
+              </header>
+
+              <!--PROJECT PRESENTATION-->
+              <div>
+                <p>
+                  Auris Viva a reçu l’exclusivité de la diffusion de l’Oreille
+                  Blanche en Belgique. Ce pin est distribué gratuitement aux
+                  personnes sourdes et malentendantes dans le but de signaler à
+                  leurs interlocuteurs leur problème d’audition. Auris Viva, par
+                  la création de 3 petits films en fera la promotion dans les
+                  médias.
+                </p>
+              </div>
+
+              <!--BOTTOM ARTICLE-->
+              <div class="call-to-action">
+                <a
+                  class="link d-flex justify-content-center align-items-center"
+                  href="#"
+                  >Donner pour cette campagne</a
+                >
+              </div>
+            </article>
+
+            <article class="article d-flex flex-column justify-content-between">
+              <!--TOP ARTICLE-->
+              <header>
+                <span class="project-type">Application</span>
+                <h3 class="project-name">Sous-Titrage</h3>
+              </header>
+
+              <!--BOTTOM ARTICLE-->
+              <div class="campaign-details">
+                <div
+                  class="figures d-flex flex-wrap justify-content-between align-items-end"
+                >
+                  <div class="figure d-flex flex-column">
+                    <span>12</span>
+                    <span>Contributeurs</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>2610€</span>
+                    <span>Gagné</span>
+                  </div>
+
+                  <div class="figure d-flex flex-column">
+                    <span>10 000€</span>
+                    <span>Cible</span>
+                  </div>
+
+                  <span
+                    class="progress-percentage d-flex flex-column justify-content-end"
+                    >26%</span
+                  >
+                </div>
+
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 26%"
+                    aria-valuenow="26"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end CAMPAIGNS SECTION -->
+
+    <!-- start TEAM SECTION -->
+    <section class="team container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="title">Notre équipe</h1>
+          </div>
+        </div>
+
+        <div class="row mb-sm-0 mb-md-5 d-flex align-items-center">
+          <div class="col-lg-6">
+            <p class="presentation">
+              Suspendisse non tortor lacus. Praesent sit amet urna feugiat,
+              pellentesque turpis sed, aliquet erat. Nulla id aliquet nulla, at
+              accumsan nibh. Aliquam sit amet aliquam odio. Fusce interdum
+              dignissim maximus. Cras a imperdiet purus, non auctor velit.
+              Maecenas non nisl non nisl euismod pellentesque. Duis quis nibh
+              erat. Integer eu dui tempus purus faucibus pretium eget et purus.
+              Morbi ullamcorper ultrices feugiat. Nullam nec fringilla mi.
+            </p>
+          </div>
+
+          <div
+            class="col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-between"
+          >
+            <div class="member">
+              <img
+                src="./assets/img/dina.png"
+                alt="Dina Lemmens - Présidente fondatrice"
+              />
+              <h2 class="name">Dina Lemmens</h2>
+              <h3 class="function">Prédidente fondatrice</h3>
+            </div>
+
+            <div class="member">
+              <img src="./assets/img/katharina.png" alt="Katharina Grosser" />
+              <h2 class="name">Katharina Grosser</h2>
+              <h3 class="function">Administratrice</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center"
+          >
+            <div class="member">
+              <img
+                src="./assets/img/berangere.png"
+                alt="Bérangère Algoedt - Membre fondatrice"
+              />
+              <h2 class="name">Bérangère Algoedt</h2>
+              <h3 class="function">Membre fondatrice</h3>
+            </div>
+
+            <div class="member">
+              <img
+                src="./assets/img/stephan.png"
+                alt="Stephan Lemmens - Membre effectif"
+              />
+              <h2 class="name">Stephan Lemmens</h2>
+              <h3 class="function">Membre effectif</h3>
+            </div>
+
+            <div class="member">
+              <img
+                src="./assets/img/arthur.png"
+                alt="Arthur Lemmens - Membre fondateur"
+              />
+              <h2 class="name">Arthur Lemmens</h2>
+              <h3 class="function">Membre fondateur</h3>
+            </div>
+
+            <div class="member">
+              <img
+                src="./assets/img/pierre.png"
+                alt="Pierre Algoedt - Membre fondateur"
+              />
+              <h2 class="name">Pierre Algoedt</h2>
+              <h3 class="function">Vice-Président - Trésorier</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end TEAM SECTION -->
+
+    <!-- start FOUNDATIONS SECTION -->
+    <section class="foundations container-fluid">
+      <!-- start ARROWS CONTROLS -->
+      <!-- PREVIOUS BUTTON -->
+      <a class="carousel-control carousel-control-prev" role="button" href="#">
+        <svg
+          class="control-icon previous-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="19"
+          height="45"
+        >
+          <path
+            fill="none"
+            stroke="#f2f2f2"
+            stroke-miterlimit="50"
+            stroke-width=".75"
+            d="M18 45L1 21.651 18 0"
+          />
+        </svg>
+      </a>
+
+      <!-- NEXT BUTTON -->
+      <a class="carousel-control carousel-control-next" role="button" href="#">
+        <svg
+          class="control-icon next-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="19"
+          height="45"
+        >
+          <path
+            fill="none"
+            stroke="#f2f2f2"
+            stroke-miterlimit="50"
+            stroke-width=".75"
+            d="M1 45l17-23.349L1 0"
+          />
+        </svg>
+      </a>
+      <!-- end ARROWS CONTROLS -->
+
+      <div class="wrapper container">
+        <div class="row">
+          <div class="col">
+            <h1 class="title">Nos fondements</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p class="quote">
+              Quand on m’a demandé d’être parrain, c’est pas tombé dans
+              l’oreille d’un sourd ! Même si c’est pour donner un peu de mon
+              temps à l’œil, je me suis dit que pour changer le monde, il valait
+              mieux s’entendre. Quoi ?
+            </p>
+          </div>
+        </div>
+
+        <!-- start BULLETS CONTROLS -->
+        <div class="row d-flex justify-content-end">
+          <div class="col-sm-6 d-flex flex-wrap align-items-center">
+            <ol class="d-flex mt-4 mb-4 mr-lg-4">
+              <li class="indicator"></li>
+              <li class="indicator"></li>
+              <li class="indicator"></li>
+              <li class="indicator"></li>
+              <li class="indicator"></li>
+            </ol>
+            <!-- end BULLETS CONTROLS -->
+
+            <div class="d-flex flex-wrap">
+              <img
+                class="mb-2"
+                src="./assets/img/thierry.png"
+                alt="Thierry De Coster"
+              />
+
+              <div class="d-flex flex-column justify-content-center ml-2">
+                <span class="name">Thierry De Coster</span>
+                <span class="function">Parrain et comédien humoriste</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end FOUNDATIONS SECTION -->
+
+    <!-- start EVENTS SECTION -->
+    <section class="events">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="title">Nos événements</h1>
+              <h2 class="subtitle">Garder une oreille ouverte</h2>
+            </div>
+          </div>
+
+          <!-- ARTICLES -->
+          <div class="row articles">
+            <div class="col d-flex flex-wrap flex-lg-nowrap">
+              <a class="event" href="#">
+                <article class="d-flex flex-column">
+                  <img
+                    class="event-photo"
+                    src="./assets/img/event-inner-wheel.png"
+                    alt="Evénément Inner Wheel Tour'Naïade"
+                  />
+                  <span class="event-date">07/09/2017</span>
+                  <h3 class="event-title">
+                    Présentation de nos projets à Tournai aux membres de Inner
+                    Wheel Tour'Naïade.
+                  </h3>
+                </article>
+              </a>
+
+              <a class="event" href="#">
+                <article class="d-flex flex-column">
+                  <img
+                    class="event-photo"
+                    src="./assets/img/event-cinema-wellington.png"
+                    alt="Evénément Cinéma Wellington"
+                  />
+                  <span class="event-date">18/05/2017</span>
+                  <h3 class="event-title">
+                    Soirée Auris Viva aux cinémas Wellington en présence de
+                    Jean-Pierre Montaufier et Katharina Grosser.
+                  </h3>
+                </article>
+              </a>
+
+              <a class="event" href="#">
+                <article class="d-flex flex-column">
+                  <img
+                    class="event-photo"
+                    src="./assets/img/event-auris-birthday.png"
+                    alt="Evénément Anniversaire Auris Viva - 3ans"
+                  />
+                  <span class="event-date">20/02/2017</span>
+                  <h3 class="event-title">
+                    Date d’anniversaire de Auris Viva! 3 ans
+                  </h3>
+                </article>
+              </a>
+
+              <a class="event" href="#">
+                <article class="d-flex flex-column">
+                  <img
+                    class="event-photo"
+                    src="./assets/img/event-jms-libramont.png"
+                    alt="Evénément Stand JMS Libramont"
+                  />
+                  <span class="event-date">24/09/2016</span>
+                  <h3 class="event-title">
+                    Stand à la JMS à Libramont
+                  </h3>
+                </article>
+              </a>
+
+              <a class="event" href="#">
+                <article class="d-flex flex-column">
+                  <img
+                    class="event-photo"
+                    src="./assets/img/event-oreille-blanche.png"
+                    alt="Evénément l'oreille blanche"
+                  />
+                  <span class="event-date">24/04/2016</span>
+                  <h3 class="event-title">
+                    Auris Viva reçoit l’exclusivité de la distribution de
+                    l’oreille blanche en Belgique
+                  </h3>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end EVENTS SECTION -->
+
+    <!-- start VOLONTEERS SECTION -->
+    <section class="volonteers container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="title">
+              Les bénévoles sont le coeur même de notre réussite !
+            </h1>
+          </div>
+
+          <div class="col-md-6">
+            <p class="text">
+              Ce sont des gens extraordinaires. Grâce à eux, nous pouvons
+              réaliser nos projets et mener à bien nos campagnes. Ce sont de
+              beaux exemples de solidarité ! Ce sont des êtres généreux et
+              désireux d’apporter tant par leur aide et leur professionnalisme
+              que par leur temps pour les différentes activités reliées à notre
+              association. Nous les remercions très chaleureusement pour leur
+              implication.
+            </p>
+            <a href="#" class="section-link d-flex ">Rejoignez-nous !</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end VOLONTEERS SECTION -->
+
+    <!-- start VIDEO CAMPAIGNS SECTION -->
+    <section
+      class="video-campaigns container-fluid d-flex flex-column align-items-center"
+    >
+      <div class="row">
+        <div class="col">
+          <h1 class="title">Nos campagnes vidéos</h1>
+          <h2 class="subtitle">Nos dernières vidéos</h2>
+        </div>
+      </div>
+
+      <!-- RECENT VIDEOS -->
+      <div class="row recent-videos">
+        <div class="col d-flex">
+          <div class="video">
+            <div class="video-cover">
+              <img
+                src="./assets/img/video-cover.png"
+                alt="video cover I-Help"
+              />
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video-cover">
+              <img
+                class="thumb"
+                src="./assets/img/video-cover.png"
+                alt="video cover I-Help"
+              />
+            </div>
+
+            <div class="video-details">
+              <h3 class="video-title">I-Help</h3>
+
+              <p class="slogan">Une application qui fait la différence</p>
+
+              <div class="d-flex">
+                <span>Partager</span>
+
+                <div class="socials">
+                  <span>
+                    <img
+                      src="./assets/img/facebook-icon.png"
+                      alt="facebook share"
+                    />
+                  </span>
+
+                  <span>
+                    <img
+                      src="./assets/img/more-icon.png"
+                      alt="more social share"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="video-cover">
+              <img
+                src="./assets/img/video-cover.png"
+                alt="video cover I-Help"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAROUSEL INDICATORS -->
+      <div class="row">
+        <div class="col">
+          <ol class="d-flex mt-5 mr-4">
+            <li class="indicator"></li>
+            <li class="indicator"></li>
+            <li class="indicator"></li>
+            <li class="indicator"></li>
+            <li class="indicator"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- end VIDEO CAMPAIGNS SECTION -->
+
+    <!-- start PARTNERS SECTION -->
+    <section class="partners container-fluid">
+      <div class="container">
+        <div class="row d-flex flex-wrap align-items-center">
+          <div class="col-md-6">
+            <h1 class="title">Partenaires et donations</h1>
+            <p class="thanks">
+              Merci a nos partenaires : Apedaf , LPC Belgique, Biz Print, Cinema
+              Wellington, L’ Oreille Blanche, Caracal studio, Body Mind
+              Wellness, Florence Collard (graphiste), Télécontact. Merci
+              également a nos donnateurs.
+            </p>
+
+            <a class="section-link">Nos campagnes</a>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              class="figures d-flex flex-wrap flex-xl-nowrap justify-content-around align-items-end"
+            >
+              <div class="figure d-flex flex-column">
+                <span>6</span>
+                <span>Campagnes</span>
+              </div>
+
+              <div class="figure d-flex flex-column">
+                <span>63</span>
+                <span>Contributeurs</span>
+              </div>
+
+              <div class="figure d-flex flex-column">
+                <span>12.455€</span>
+                <span>Gagné</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end PARTNERS SECTION -->
+
+    <!-- start DONATIONS SECTION -->
+    <section class="donations container-fluid">
+      <div class="donation d-flex flex-column">
+        <span>
+          Christiane Purnode
+        </span>
+
+        <span>
+          50€
+        </span>
+      </div>
+    </section>
+    <!-- start DONATIONS SECTION -->
+
+    <!-- start FOOTER -->
+    <footer class="footer container-fluid">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-8 d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center"
+          >
+            <span>copy right © 2019</span>
+
+            <div class="contact">
+              <a href="#">Contact us</a>
+              <a href="#">Facebook</a>
+              <span>Auris Viva ASBL — La Chênaie 10, 1390 Grez Doiceau</span>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center"
+          >
+            <img
+              src="./assets/img/caracal-logo.png"
+              alt="logo caracal studio"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end FOOTER -->
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>

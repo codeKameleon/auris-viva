@@ -1,0 +1,31 @@
+.donations {
+  height: 50vh;
+  background: url('../../assets/img/donations.png') center center / cover
+    repeat-x;
+  @include media-breakpoint-up(xl) {
+    background-size: contain;
+  }
+  .donation {
+    position: relative;
+    top: -60px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $greyMedium;
+    color: $black;
+    font-family: $Lato;
+    text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 8;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid $greyMedium;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.campaigns {
+  padding: 60px 0;
+  background-color: $white;
+
+  @include media-breakpoint-up(md) {
+    padding: 100px 0;
+  }
+
+  .title {
+    margin-bottom: 30px;
+    font-family: $Leitura;
+    font-size: 2.5rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .subtitle {
+    color: $greyDark;
+    font-family: $Lato;
+    font-size: 1.25rem;
+  }
+
+  .article {
+    height: auto;
+    margin: 40px 0;
+    padding: 40px 60px;
+    background-color: $blue;
+    color: $white;
+
+    @include media-breakpoint-up(md) {
+      height: 60vh;
+    }
+  }
+
+  .projects-col-1 {
+    .article {
+      &:nth-child(2) {
+        background-color: $orange;
+      }
+
+      @include media-breakpoint-up(md) {
+        &:last-child {
+          margin-bottom: -150px;
+        }
+      }
+    }
+  }
+
+  .projects-col-2 {
+    .article:first-child {
+      margin-top: 0;
+      background-color: $orange;
+      text-align: center;
+    }
+  }
+
+  .project-type {
+    font-family: $Lato;
+    font-size: 0.875rem;
+  }
+
+  .project-name {
+    font-family: $Leitura;
+    font-size: 2rem;
+  }
+
+  .link {
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 8px;
+    border-radius: 30px;
+    background-color: $white;
+    color: $black;
+    font-family: $Lato;
+  }
+
+  .figures {
+    margin-bottom: 30px;
+  }
+
+  .figure {
+    span:first-child {
+      font-size: 1.5rem;
+    }
+    span:last-child {
+      font-size: 0.875rem;
+      font-family: $LatoBlack;
+    }
+  }
+
+  .progress,
+  .progress-bar {
+    border-radius: 8px;
+  }
+
+  .progress {
+    background-color: rgba (255, 255, 255, 0.15);
+  }
+
+  .progress-bar {
+    background-color: $white;
+  }
+
+  .progress-percentage {
+    margin: 20px 0;
+    font-family: $Leitura;
+    font-size: 3rem;
+    line-height: 1;
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+    }
+  }
+}

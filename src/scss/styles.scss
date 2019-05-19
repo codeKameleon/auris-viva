@@ -1,4 +1,24 @@
+/* Bootstrap*/
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+
+/* App*/
 @import './fonts';
 @import './variables';
 @import './normalize';
 @import './global';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './home/hero';
+@import './home/about';
+@import './home/campaigns';
+@import './home/team';
+@import './home/foundations';
+@import './home/events';
+@import './home/volonteers';
+@import './home/video-campaigns';
+@import './home/partners';
+@import './home/donations';

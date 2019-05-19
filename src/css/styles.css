@@ -1,3 +1,5 @@
+/* Bootstrap*/
+/* App*/
 /* HK Grotesk */
 @font-face {
   font-family: 'HK Grotesk';
@@ -17,8 +19,9 @@
   font-family: 'Leitura Display Italic';
   src: url("../assets/fonts/LeituraDisplay/LeituraDisplay-Italic.woff") format("woff"); }
 
-/* Colors */
 /* Fonts */
+/* Colors */
+/* Layout */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -147,6 +150,30 @@ sup {
  */
 img {
   border-style: none; }
+
+/* Lists
+   ========================================================================== */
+/**
+ * 1. Remove default spaces 
+   2. Remove default bullets of list items.
+ */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the default styling of links.
+ */
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
 
 /* Forms
    ========================================================================== */
@@ -328,4 +355,587 @@ template {
   box-sizing: border-box; }
 
 body {
+  overflow-x: hidden;
   font-size: 16px; }
+
+.header {
+  height: 80px;
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .header {
+      height: calc(80px * 2); } }
+  .header .wrapper {
+    height: 100%; }
+    .header .wrapper > * {
+      height: 100%; }
+  .header .logo {
+    color: #000;
+    font-family: "Lato Black";
+    font-size: 1.125rem;
+    text-transform: uppercase; }
+  .header .btn-menu {
+    position: relative;
+    border: none;
+    background-color: transparent; }
+    .header .btn-menu .text {
+      position: relative;
+      z-index: 2;
+      margin-right: 10px;
+      font-family: "Lato Black";
+      font-size: 0.8rem;
+      text-transform: uppercase; }
+    .header .btn-menu::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      left: -25px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #f3f3f3; }
+
+.footer {
+  margin-top: 80px;
+  padding: 30px;
+  background-color: #123481;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 0.85rem; }
+  @media (min-width: 992px) {
+    .footer {
+      margin-top: 160px; } }
+  .footer .contact {
+    margin-left: 20px;
+    padding: 16px 0; }
+    .footer .contact > * {
+      padding: 0 4px;
+      border-left: 2px solid #fff; }
+  @media (min-width: 768px) {
+    .footer {
+      padding: 60px; } }
+
+.hero {
+  height: calc(100vh - 80px);
+  background: url("../../assets/img/hero.png") center center/contain no-repeat; }
+  .hero > * {
+    height: 100%; }
+  .hero .content {
+    height: 100%;
+    text-align: center; }
+  .hero .title {
+    max-width: 650px;
+    margin: 30px auto;
+    font-family: "Leitura Display Italic";
+    font-size: 2rem; }
+    @media (min-width: 768px) {
+      .hero .title {
+        font-size: 3rem; } }
+  .hero .section-link {
+    position: relative;
+    font-family: "Lato";
+    font-size: 0.85rem; }
+    .hero .section-link::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: -50px;
+      width: 76px;
+      height: 73px;
+      background: url("../../assets/img/circle-1.png") center center/contain no-repeat; }
+
+.about {
+  position: relative;
+  padding: 60px 0;
+  background-color: #f1f1f1; }
+  @media (min-width: 768px) {
+    .about {
+      padding: 100px 0; } }
+  .about .why-us {
+    color: #9b9b9b;
+    font-family: "HK Grotesk";
+    font-size: 1.4rem; }
+    .about .why-us .presentation {
+      width: 100%; }
+    .about .why-us .title {
+      margin-bottom: 45px;
+      color: #000;
+      font-family: "Leitura Display Italic";
+      font-size: 1.25rem; }
+    .about .why-us .subtitle {
+      color: #9b9b9b;
+      margin-bottom: 0;
+      font-size: 0.85rem; }
+      @media (min-width: 576px) {
+        .about .why-us .subtitle {
+          font-size: 1.25rem;
+          padding-left: 32px; } }
+    .about .why-us .selected > * {
+      font-weight: 700; }
+    .about .why-us .selected span {
+      color: #2a66ee; }
+    .about .why-us .selected .subtitle {
+      color: #000; }
+  .about .illustration {
+    width: 120px;
+    margin: 40px auto; }
+    @media (min-width: 576px) {
+      .about .illustration {
+        width: 200px; } }
+    @media (min-width: 768px) {
+      .about .illustration {
+        width: auto;
+        margin-top: 60px;
+        margin-bottom: -120px; } }
+  .about .description {
+    font-family: "Lato";
+    font-size: 1rem; }
+    .about .description .title {
+      margin-bottom: 40px;
+      font-family: "Leitura Display Italic";
+      font-size: 2rem; }
+      @media (min-width: 768px) {
+        .about .description .title {
+          font-size: 2.5rem; } }
+    .about .description .intro {
+      font-weight: 700; }
+  .about .links {
+    margin-top: 60px; }
+    @media (min-width: 576px) {
+      .about .links {
+        margin: 30px auto;
+        padding: 0 24px; } }
+    @media (min-width: 768px) {
+      .about .links {
+        margin: 60px 0 0;
+        padding: 0; } }
+  .about .link {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #fff;
+    margin: 16px auto; }
+    .about .link .text {
+      padding-left: 16px; }
+    .about .link::before {
+      content: '';
+      position: relative;
+      z-index: 2;
+      display: flex;
+      width: 50px;
+      height: 2px;
+      margin-left: -20px;
+      background-color: #ff6e28; }
+
+.campaigns {
+  padding: 60px 0;
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .campaigns {
+      padding: 100px 0; } }
+  .campaigns .title {
+    margin-bottom: 30px;
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+    @media (min-width: 768px) {
+      .campaigns .title {
+        margin-bottom: 60px; } }
+  .campaigns .subtitle {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1.25rem; }
+  .campaigns .article {
+    height: auto;
+    margin: 40px 0;
+    padding: 40px 60px;
+    background-color: #2a66ee;
+    color: #fff; }
+    @media (min-width: 768px) {
+      .campaigns .article {
+        height: 60vh; } }
+  .campaigns .projects-col-1 .article:nth-child(2) {
+    background-color: #ff6e28; }
+  @media (min-width: 768px) {
+    .campaigns .projects-col-1 .article:last-child {
+      margin-bottom: -150px; } }
+  .campaigns .projects-col-2 .article:first-child {
+    margin-top: 0;
+    background-color: #ff6e28;
+    text-align: center; }
+  .campaigns .project-type {
+    font-family: "Lato";
+    font-size: 0.875rem; }
+  .campaigns .project-name {
+    font-family: "Leitura Display Italic";
+    font-size: 2rem; }
+  .campaigns .link {
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 8px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    font-family: "Lato"; }
+  .campaigns .figures {
+    margin-bottom: 30px; }
+  .campaigns .figure span:first-child {
+    font-size: 1.5rem; }
+  .campaigns .figure span:last-child {
+    font-size: 0.875rem;
+    font-family: "Lato Black"; }
+  .campaigns .progress,
+  .campaigns .progress-bar {
+    border-radius: 8px; }
+  .campaigns .progress {
+    background-color: rgba 255, 255, 255, 0.15; }
+  .campaigns .progress-bar {
+    background-color: #fff; }
+  .campaigns .progress-percentage {
+    margin: 20px 0;
+    font-family: "Leitura Display Italic";
+    font-size: 3rem;
+    line-height: 1; }
+    @media (min-width: 576px) {
+      .campaigns .progress-percentage {
+        margin: 0; } }
+
+.team {
+  padding: 60px 0;
+  background-color: #f1f1f1; }
+  @media (min-width: 768px) {
+    .team {
+      padding: 150px 0; } }
+  @media (min-width: 992px) {
+    .team {
+      padding: 200px 0; } }
+  .team .title {
+    font-family: "Leitura Display Italic"; }
+  .team .presentation {
+    margin-bottom: 60px;
+    font-family: "Lato";
+    line-height: 2; }
+  .team .member {
+    margin: 16px auto;
+    text-align: center; }
+  .team .name {
+    font-family: "Lato Black";
+    font-size: 1.25rem; }
+  .team .function {
+    font-family: "Lato";
+    font-size: 1rem; }
+
+.foundations {
+  position: relative;
+  padding: 60px 0; }
+  @media (min-width: 992px) {
+    .foundations {
+      padding: 120px 0; } }
+  .foundations .wrapper {
+    padding: 30px 60px;
+    background-color: #2a66ee;
+    color: #fff; }
+    @media (min-width: 992px) {
+      .foundations .wrapper {
+        margin-top: -200px;
+        margin-right: 0;
+        padding: 60px; } }
+  .foundations .title {
+    font-family: "Lato";
+    font-size: 1rem;
+    margin-bottom: 30px; }
+  @media (min-width: 992px) {
+    .foundations .previous-icon path {
+      stroke: #2a66ee; } }
+  .foundations .quote {
+    max-width: 800px;
+    padding: 0 10px;
+    font-family: "Leitura Display Italic";
+    font-size: 1.2rem; }
+    @media (min-width: 768px) {
+      .foundations .quote {
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      .foundations .quote {
+        font-size: 2.5rem; } }
+  .foundations .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-indent: -9999px; }
+  .foundations .name {
+    font-family: "Lato Black";
+    font-size: 1rem; }
+  .foundations .function {
+    font-family: "Lato";
+    font-size: 1rem; }
+
+.events {
+  padding: 0 0 60px; }
+  @media (min-width: 992px) {
+    .events {
+      padding: 0 0 200px; } }
+  @media (min-width: 1200px) {
+    .events {
+      padding: 0 0 250px; } }
+  .events .title {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1rem; }
+  .events .subtitle {
+    margin-bottom: 60px;
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  @media (min-width: 992px) {
+    .events .articles {
+      margin-left: -200px; } }
+  .events .event {
+    max-width: 280px;
+    margin: 0 auto 16px; }
+    @media (min-width: 992px) {
+      .events .event {
+        margin: 16px;
+        max-width: none; } }
+  .events .event-photo {
+    max-width: 100%;
+    margin-bottom: 15px; }
+    @media (min-width: 992px) {
+      .events .event-photo {
+        max-width: none; } }
+  .events .event-date {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1rem; }
+  .events .event-title {
+    font-family: "Lato Black";
+    font-size: 1.25rem; }
+
+.volonteers {
+  position: relative;
+  z-index: 1;
+  padding: 150px 0;
+  background-color: #2a66ee;
+  color: #fff; }
+  .volonteers::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 335px;
+    z-index: 2;
+    background: url("../../assets/img/shape-1.svg") center center/50% 50% no-repeat; }
+    @media (min-width: 992px) {
+      .volonteers::before {
+        top: -200px;
+        left: 40%;
+        transform: translateX(0);
+        background-size: 80% 80%; } }
+    @media (min-width: 1200px) {
+      .volonteers::before {
+        left: 45%;
+        background-size: 100% 100%; } }
+  .volonteers::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 497px;
+    height: 335px;
+    z-index: 2;
+    background: url("../../assets/img/shape-2.svg") center center/50% 50% no-repeat; }
+    @media (min-width: 992px) {
+      .volonteers::after {
+        bottom: -160px;
+        left: 10%;
+        transform: translateX(0);
+        background-size: 80% 80%; } }
+    @media (min-width: 1200px) {
+      .volonteers::after {
+        left: 15%;
+        background-size: 100% 100%; } }
+  .volonteers .title {
+    margin-top: 0;
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+    @media (min-width: 1200px) {
+      .volonteers .title {
+        padding: 0 25px; } }
+  .volonteers .section-link {
+    position: relative;
+    transform: translateX(50px);
+    font-family: "Lato Black";
+    font-size: 0.85rem; }
+    @media (min-width: 992px) {
+      .volonteers .section-link {
+        transform: translateX(0); } }
+    .volonteers .section-link::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: -50px;
+      width: 76px;
+      height: 73px;
+      background: url("../../assets/img/circle-2.png") center center/contain no-repeat; }
+  .volonteers .text {
+    margin-bottom: 40px;
+    font-family: "Lato";
+    font-size: 1rem;
+    line-height: 2; }
+
+.video-campaigns {
+  padding: 100px 0 60px; }
+  @media (min-width: 992px) {
+    .video-campaigns {
+      padding-top: 200px; } }
+  .video-campaigns .title,
+  .video-campaigns .subtitle {
+    text-align: center; }
+  .video-campaigns .title {
+    color: #9b9b9b;
+    font-family: "Lato";
+    font-size: 1rem; }
+  .video-campaigns .subtitle {
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  .video-campaigns .recent-videos {
+    margin-top: 30px; }
+  .video-campaigns .video {
+    margin: 0; }
+    .video-campaigns .video .thumb {
+      max-width: 100%; }
+      @media (min-width: 992px) {
+        .video-campaigns .video .thumb {
+          max-width: none; } }
+    .video-campaigns .video:first-child, .video-campaigns .video:last-child {
+      /*
+        Design purpose only to show that on smaller screen we only see 
+        the current video and not the previous and next video as there is
+        not enough space for it.
+      */
+      display: none; }
+      @media (min-width: 992px) {
+        .video-campaigns .video:first-child, .video-campaigns .video:last-child {
+          display: block;
+          transform: scale(0.9); }
+          .video-campaigns .video:first-child .video-cover, .video-campaigns .video:last-child .video-cover {
+            position: relative; }
+            .video-campaigns .video:first-child .video-cover::before, .video-campaigns .video:last-child .video-cover::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: rgba(89, 89, 89, 0.68); }
+          .video-campaigns .video:first-child .thumb, .video-campaigns .video:last-child .thumb {
+            max-width: none; } }
+  .video-campaigns .video-details {
+    padding: 0 15px; }
+    @media (min-width: 992px) {
+      .video-campaigns .video-details {
+        padding: 0; } }
+  .video-campaigns .video-cover {
+    margin-bottom: 30px; }
+  .video-campaigns .video-title {
+    font-family: "Lato Black";
+    font-size: 1rem; }
+  .video-campaigns .slogan {
+    margin-bottom: 4px;
+    color: #9b9b9b;
+    font-family: "Lato"; }
+  .video-campaigns .socials {
+    margin-left: 8px; }
+  .video-campaigns .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: #9b9b9b; }
+    .video-campaigns .indicator:nth-child(4) {
+      background-color: #2a66ee; }
+
+.partners {
+  padding: 0 0 120px; }
+  @media (min-width: 992px) {
+    .partners {
+      padding: 80px 0 200px; } }
+  .partners .title {
+    font-family: "Leitura Display Italic";
+    font-size: 2.5rem; }
+  .partners .thanks {
+    width: 100%;
+    margin-bottom: 70px;
+    font-family: "Lato";
+    font-size: 1rem;
+    line-height: 2; }
+    @media (min-width: 768px) {
+      .partners .thanks {
+        max-width: 390px; } }
+  .partners .section-link {
+    position: relative;
+    display: block;
+    width: 30%;
+    margin: 0 auto 60px;
+    font-family: "Lato";
+    font-size: 1rem; }
+    .partners .section-link::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: -65px;
+      transform: translateY(-50%);
+      width: 76px;
+      height: 73px;
+      background: url("../../assets/img/circle-3.png") center center/contain no-repeat; }
+    @media (min-width: 768px) {
+      .partners .section-link {
+        width: auto;
+        margin: 0 0 0 76px; } }
+  .partners .figures {
+    padding: 20px;
+    background-color: #2a66ee;
+    color: #fff; }
+  .partners .figure {
+    padding: 20px; }
+    .partners .figure span:first-child {
+      font-family: "Leitura Display Italic";
+      font-size: 3.125rem; }
+    .partners .figure span:last-child {
+      font-family: "Lato";
+      font-size: 1.125rem; }
+
+.donations {
+  height: 50vh;
+  background: url("../../assets/img/donations.png") center center/cover repeat-x; }
+  @media (min-width: 1200px) {
+    .donations {
+      background-size: contain; } }
+  .donations .donation {
+    position: relative;
+    top: -60px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-family: "Lato";
+    text-align: center; }
+    .donations .donation::after {
+      content: '';
+      position: absolute;
+      z-index: 8;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #f1f1f1; }
