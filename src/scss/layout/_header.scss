@@ -46,4 +46,17 @@
       background-color: $greyLight;
     }
   }
+
+  .btn-animate {
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      left: -25px;
+      width: 100vh;
+      height: 100vh;
+      border-radius: 50%;
+      background-color: $greyLight;
+    }
+  }
 }

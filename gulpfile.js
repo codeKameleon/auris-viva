@@ -33,7 +33,8 @@ gulp.task(
 
     gulp.watch(
       ['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'],
-      gulp.series('sass')
+      gulp.series('sass'),
+      gulp.parallel('sass', 'js')
     );
     gulp.watch('src/*.html').on('change', browserSync.reload);
   })
