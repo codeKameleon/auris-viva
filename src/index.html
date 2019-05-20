@@ -53,29 +53,45 @@
           <div class="col-sm-6 why-us d-flex flex-column justify-content-start">
             <h1 class="title">Pourquoi nous ?</h1>
 
-            <ul
-              class="presentation d-flex flex-sm-column justify-content-between"
-            >
-              <li class="d-flex flex-column flex-sm-row align-items-center">
-                <span>01</span>
-                <h2 class="subtitle">Histoire</h2>
+            <ul class="slider d-flex flex-sm-column justify-content-between">
+              <li>
+                <a
+                  class="slider-link d-flex flex-column flex-sm-row align-items-center"
+                  href="#"
+                >
+                  <span>01</span>
+                  <h2 class="subtitle">Histoire</h2>
+                </a>
               </li>
 
               <li class="d-flex flex-column flex-sm-row align-items-center">
-                <span>02</span>
-                <h2 class="subtitle">Objectif</h2>
+                <a
+                  class="slider-link d-flex flex-column flex-sm-row align-items-center"
+                  href="#"
+                >
+                  <span>02</span>
+                  <h2 class="subtitle">Objectif</h2>
+                </a>
               </li>
 
-              <li class="d-flex flex-column flex-sm-row align-items-center">
-                <span>03</span>
-                <h2 class="subtitle">Projet</h2>
+              <li>
+                <a
+                  class="slider-link d-flex flex-column flex-sm-row align-items-center"
+                  href="#"
+                >
+                  <span>03</span>
+                  <h2 class="subtitle">Projet</h2>
+                </a>
               </li>
 
-              <li
-                class="d-flex flex-column flex-sm-row align-items-center selected"
-              >
-                <span>04</span>
-                <h2 class="subtitle">Implant cochléaire</h2>
+              <li class="selected">
+                <a
+                  class="slider-link d-flex flex-column flex-sm-row align-items-center"
+                  href="#"
+                >
+                  <span>04</span>
+                  <h2 class="subtitle">Implant cochléaire</h2>
+                </a>
               </li>
             </ul>
 
@@ -642,7 +658,9 @@
               association. Nous les remercions très chaleureusement pour leur
               implication.
             </p>
-            <a href="#" class="section-link d-flex ">Rejoignez-nous !</a>
+            <a href="#" class="section-link d-flex d-lg-inline-flex"
+              >Rejoignez-nous !</a
+            >
           </div>
         </div>
       </div>
@@ -664,22 +682,24 @@
       <div class="row recent-videos">
         <div class="col d-flex">
           <div class="video">
-            <div class="video-cover">
-              <img
-                src="./assets/img/video-cover.png"
-                alt="video cover I-Help"
-              />
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/V8owtPwWwP4"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="overlay"></div>
             </div>
           </div>
 
           <div class="video">
-            <div class="video-cover">
-              <img
-                class="thumb"
-                src="./assets/img/video-cover.png"
-                alt="video cover I-Help"
-              />
-            </div>
+            <iframe
+              src="https://www.youtube.com/embed/V8owtPwWwP4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
 
             <div class="video-details">
               <h3 class="video-title">I-Help</h3>
@@ -690,30 +710,33 @@
                 <span>Partager</span>
 
                 <div class="socials">
-                  <span>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/AurisViva/" target="_blank">
                     <img
                       src="./assets/img/facebook-icon.png"
                       alt="facebook share"
                     />
                   </span>
 
-                  <span>
+                  <a href="#">
                     <img
                       src="./assets/img/more-icon.png"
                       alt="more social share"
                     />
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="video">
-            <div class="video-cover">
-              <img
-                src="./assets/img/video-cover.png"
-                alt="video cover I-Help"
-              />
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/V8owtPwWwP4"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="overlay"></div>
             </div>
           </div>
         </div>
@@ -747,7 +770,9 @@
               également a nos donnateurs.
             </p>
 
-            <a class="section-link">Nos campagnes</a>
+            <a href="#" class="section-link d-flex d-lg-inline-flex"
+              >Nos campagnes</a
+            >
           </div>
 
           <div class="col-md-6">
@@ -821,5 +846,6 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

@@ -53,6 +53,16 @@
       margin-top: 0;
       background-color: $orange;
       text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        .link {
+          transition: all 300ms ease-in-out;
+          &:hover {
+            color: $white;
+            background-color: #123481;
+          }
+        }
+      }
     }
   }
 
