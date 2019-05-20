@@ -4,10 +4,22 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 99;
-  display: none;
+  transform: translateY(-100%);
+  z-index: 999;
   background-color: #6651ff;
   color: $white;
+  transition: transform 200ms ease-in-out;
+
+  .btn-close-menu {
+    position: absolute;
+    z-index: 9999;
+    right: 50px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+  }
 
   .links {
     width: 100%;
@@ -28,4 +40,8 @@
     background-color: $white;
     color: #6651ff;
   }
+}
+
+.nav.open {
+  transform: translateY(0);
 }
