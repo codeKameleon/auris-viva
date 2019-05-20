@@ -14,11 +14,12 @@ function init() {
   // Listeners
   addEventListener('scroll', () => {
     animateHeader();
+    changeLinkState();
   });
 
   btnOpenMenu.addEventListener('click', openMenu);
   btnCloseMenu.addEventListener('click', closeMenu);
-  navLinks.forEach(navLink => navLink.addEventListener('click', closeMenu));
+  navLinks.forEach(link => link.addEventListener('click', closeMenu));
   navLinks.forEach(link => link.addEventListener('click', smoothScroll));
   sectionLinks.forEach(link => link.addEventListener('click', smoothScroll));
 
@@ -42,15 +43,33 @@ function init() {
     nav.classList.remove('open');
   }
 
-  // Add smooth scroll when cliking on nav link
+  // Add smooth scroll when cliking on nav links
   function smoothScroll(e) {
     console.log('test');
     const section = document.querySelector(this.hash);
     e.preventDefault();
 
     window.scrollTo({
-      top: section.offsetTop - headerHeight,
+      top: section.offsetTop,
       behavior: 'smooth'
+    });
+  }
+
+  // Add style for active nav link
+  function changeLinkState() {
+    const scrollY = window.scrollY;
+
+    navLinks.forEach(link => {
+      const section = document.querySelector(link.hash);
+
+      if (
+        section.offsetTop <= scrollY &&
+        section.offsetTop + section.offsetHeight > scrollY
+      ) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
     });
   }
 }

@@ -408,7 +408,7 @@ body {
   right: 0;
   transform: translateY(-100%);
   z-index: 999;
-  background-color: #6651ff;
+  background-color: rgba(102, 81, 255, 0.92);
   color: #fff;
   transition: transform 200ms ease-in-out; }
   .nav .btn-close-menu {
@@ -441,12 +441,22 @@ body {
   .nav .link-item {
     padding: 25px; }
   .nav .link {
+    padding: 8px;
     font-family: "Leitura Display Italic";
     font-size: 1.25rem;
     text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .nav .link {
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      .nav .link {
+        font-size: 2rem; } }
   .nav .active {
     background-color: #fff;
     color: #6651ff; }
+  .nav .animate {
+    opacity: 1;
+    transform: translateY(0); }
 
 .nav.open {
   transform: translateY(0); }
