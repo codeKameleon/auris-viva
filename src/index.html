@@ -15,14 +15,14 @@
       <div class="wrapper container">
         <div class="row d-flex flex-nowrap align-items-center">
           <div class="col-6 d-flex justify-content-start">
-            <a class="logo" href="#">Auris Viva</a>
+            <a class="logo" href="#hero">Auris Viva</a>
           </div>
 
           <div class="col-6 d-flex justify-content-end">
-            <button class="btn-menu">
+            <button class="btn-open-menu">
               <span class="text">Menu</span>
 
-              <img src="./assets/img/menu-icon.svg" alt="menu icon" />
+              <img src="./assets/img/open-menu-icon.svg" alt="menu icon" />
             </button>
           </div>
         </div>
@@ -30,8 +30,25 @@
     </header>
     <!-- end HEADER -->
 
+    <!-- start NAVIGATION -->
+      <nav class="nav container-fluid">
+          <button class="btn-close-menu">
+              <img src="./assets/img/close-menu-icon.svg" alt="close icon" />
+          </button>
+
+
+          <ul class="links d-flex flex-column align-items-center justify-content-center">
+            <li class="link-item"><a class="link" href="#why-us">Pourquoi nous ?</a></li>
+            <li class="link-item"><a class="link" href="#campaigns">Nos campagnes</a></li>
+            <li class="link-item"><a class="link" href="#team">Notre équipe</a></li>
+            <li class="link-item"><a class="link" href="#events">Nos évenements</a></li>
+            <li class="link-item"><a class="link" href="#partners">Nos partenaires</a></li>
+          </ul>
+      </nav>
+    <!-- end NAVIGATION -->
+      
     <!-- start HERO SECTION -->
-    <section class="hero container-fluid">
+    <section id="hero" class="hero container-fluid">
       <div class="row">
         <div
           class="content col d-flex flex-column justify-content-center align-items-center"
@@ -40,14 +57,14 @@
             Auris Viva l’asbl pour l’intégration des sourds et malentendants.
           </h1>
 
-          <a href="#" class="section-link d-flex">Faites un don</a>
+          <a href="#donations" class="section-link d-flex">Faites un don</a>
         </div>
       </div>
     </section>
     <!-- end HERO SECTION -->
 
     <!-- start ABOUT SECTION -->
-    <section class="about container-fluid">
+    <section id="why-us" class="about container-fluid">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 why-us d-flex flex-column justify-content-start">
@@ -137,7 +154,7 @@
     <!-- end ABOUT SECTION -->
 
     <!-- start CAMPAIGNS SECTION -->
-    <section class="campaigns container-fluid">
+    <section id="campaigns" class="campaigns container-fluid">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -371,7 +388,7 @@
     <!-- end CAMPAIGNS SECTION -->
 
     <!-- start TEAM SECTION -->
-    <section class="team container-fluid">
+    <section id="team" class="team container-fluid">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -546,7 +563,7 @@
     <!-- end FOUNDATIONS SECTION -->
 
     <!-- start EVENTS SECTION -->
-    <section class="events">
+    <section id="events" class="events">
       <div class="container-fluid">
         <div class="container">
           <div class="row">
@@ -658,7 +675,7 @@
               association. Nous les remercions très chaleureusement pour leur
               implication.
             </p>
-            <a href="#" class="section-link d-flex d-lg-inline-flex"
+            <a href="#footer" class="section-link d-flex d-lg-inline-flex"
               >Rejoignez-nous !</a
             >
           </div>
@@ -669,6 +686,7 @@
 
     <!-- start VIDEO CAMPAIGNS SECTION -->
     <section
+      id="videos-campaigns"
       class="video-campaigns container-fluid d-flex flex-column align-items-center"
     >
       <div class="row">
@@ -758,7 +776,7 @@
     <!-- end VIDEO CAMPAIGNS SECTION -->
 
     <!-- start PARTNERS SECTION -->
-    <section class="partners container-fluid">
+    <section id="partners" class="partners container-fluid">
       <div class="container">
         <div class="row d-flex flex-wrap align-items-center">
           <div class="col-md-6">
@@ -770,7 +788,7 @@
               également a nos donnateurs.
             </p>
 
-            <a href="#" class="section-link d-flex d-lg-inline-flex"
+            <a href="#campaigns" class="section-link d-flex d-lg-inline-flex"
               >Nos campagnes</a
             >
           </div>
@@ -801,7 +819,7 @@
     <!-- end PARTNERS SECTION -->
 
     <!-- start DONATIONS SECTION -->
-    <section class="donations container-fluid">
+    <section id="donations" class="donations container-fluid">
       <div class="donation d-flex flex-column">
         <span>
           Christiane Purnode
@@ -815,23 +833,23 @@
     <!-- start DONATIONS SECTION -->
 
     <!-- start FOOTER -->
-    <footer class="footer container-fluid">
+    <footer id="footer" class="footer container-fluid">
       <div class="container">
         <div class="row">
           <div
-            class="col-md-8 d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center"
+            class="col-md-9 d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center"
           >
             <span>copy right © 2019</span>
 
             <div class="contact">
-              <a href="#">Contact us</a>
-              <a href="#">Facebook</a>
+              <a href="mailto:info@aurisviva.be">Contactez-nous</a>
+              <a href="https://www.facebook.com/AurisViva/" target="_blank">Facebook</a>
               <span>Auris Viva ASBL — La Chênaie 10, 1390 Grez Doiceau</span>
             </div>
           </div>
 
           <div
-            class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center"
+            class="col-md-3 d-flex justify-content-center justify-content-md-end align-items-center"
           >
             <img
               src="./assets/img/caracal-logo.png"
