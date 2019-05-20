@@ -13,12 +13,30 @@
   .btn-close-menu {
     position: absolute;
     z-index: 9999;
-    right: 50px;
-    top: 50px;
+    top: 20px;
+    right: 20px;
     width: 50px;
     height: 50px;
     border: none;
     background-color: transparent;
+
+    @include media-breakpoint-up(sm) {
+      top: 30px;
+      right: 30px;
+    }
+
+    @include media-breakpoint-up(md) {
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: 100px;
+      left: auto;
+      right: 100px;
+      transform: translateX(0);
+    }
   }
 
   .links {
